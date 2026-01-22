@@ -10,17 +10,15 @@ Write your cost formula (math or pseudocode). It must include:
 // formula could go here
 ```
 Size factor selected (choose at least one):
-- sqrt(volume)
+
 - surface area: 2(lw + lh + wh)
-- longest side: max(length, width, height)
 - density: weight / volume
-- cube root: volume^(1/3)
-- perimeter of footprint: 2(length + width)
-- other:
+
 
 Brief justification (2–4 sentences):
 
----
+--- We chose density and surface area because we don't have to deal with complexity of other options.
+Also, we decided to chose two methods to give us a little more of a challenge.
 
 ## Method List (at least 5)
 
@@ -30,32 +28,32 @@ For each method, keep it short. Include only:
 - output (what it returns)
 - return type
 
-Method 1:
-- description:
-- inputs:
-- output:
-- return type:
+Method 1: getDensity
+- description: calculate the density of the object and determine if it's above a certain density
+- inputs: wight, volume
+- output: Density
+- return type: boolean
 
-Method 2:
-- description:
-- inputs:
-- output:
-- return type:
+Method 2: getSurfaceArea
+- description: calculate the objects surface area
+- inputs: width, height, weight
+- output: SurfaceArea
+- return type: int
 
-Method 3:
-- description:
-- inputs:
-- output:
-- return type:
+Method 3: finalCost
+- description: calculate the final shipping cost
+- inputs: densityCost, surfaceAreaCost
+- output: finalCost
+- return type: double
 
-Method 4:
-- description:
-- inputs:
-- output:
-- return type:
+Method 4: getDensityCost
+- description: calculate the total cost in density
+- inputs: getDensity
+- output: densityCost
+- return type: double
 
-Method 5:
-- description:
-- inputs:
-- output:
-- return type:
+Method 5: getSurfaceAreaCost
+- description: calculate the total cost in Surface Area
+- inputs: getSurfaceArea
+- output: surfaceAreaCost
+- return type: double
