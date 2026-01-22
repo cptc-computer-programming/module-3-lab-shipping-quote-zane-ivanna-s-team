@@ -1,6 +1,6 @@
 public class shippingAssignment {
   public static final double WEIGHT_RATE = 0.50;
-  public static final double DENSITY_RATE = 0.75;
+  public static final double DENSITY_RATE = 1.0;
   public static final double SURFACE_AREA_RATE = 0.25;
 
     public static void main(String[] args) {
@@ -11,6 +11,7 @@ public class shippingAssignment {
         int volume = length * width  * height;
         boolean density = getDensity(weight, volume);
         int surfaceArea = getSurfaceArea(length, height, width);
+        double densityCost = densityCost(density, DENSITY_RATE);
       }  
     
     public static boolean getDensity (int weight, int volume ) {
@@ -21,6 +22,14 @@ public class shippingAssignment {
       return 2 * ((length * height) + (length * width) + (width * height));
     }
 
-    
+    public static double densityCost(boolean density, double rate) {
+      if (density == true) {
+        double densityCost = rate;
+        return densityCost;
+      }
+      else {
+        return 0;
+      }
+    }
     
 }
