@@ -1,5 +1,5 @@
 # Shipping Quote Calculator
-
+Adding random words to this document :)
 ## Cost Formula
 
 Write your cost formula (math or pseudocode). It must include:
