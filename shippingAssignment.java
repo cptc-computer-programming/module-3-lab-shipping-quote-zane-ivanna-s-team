@@ -12,6 +12,7 @@ public class shippingAssignment {
         boolean density = getDensity(weight, volume);
         int surfaceArea = getSurfaceArea(length, height, width);
         double densityCost = densityCost(density, DENSITY_RATE);
+        double surfaceAreaCost = surfaceAreaCost(surfaceArea, SURFACE_AREA_RATE);
       }  
     
     public static boolean getDensity (int weight, int volume ) {
@@ -30,6 +31,10 @@ public class shippingAssignment {
       else {
         return 0;
       }
+    }
+
+    public static double surfaceAreaCost(int surfaceArea, double rate) {
+      return surfaceArea * rate;
     }
     
 }
