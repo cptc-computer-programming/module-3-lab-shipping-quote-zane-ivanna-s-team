@@ -36,7 +36,7 @@ Method 1: getDensity
 
 Method 2: getSurfaceArea
 - description: calculate the objects surface area
-- inputs: width, height, weight
+- inputs: width, height, width
 - output: SurfaceArea
 - return type: int
 
